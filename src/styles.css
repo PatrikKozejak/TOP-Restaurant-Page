@@ -1,0 +1,197 @@
+@font-face {
+  font-family: satisfy-regular;
+  src: url("fonts/satisfy-regular-webfont.woff2");
+  src: url("fonts/satisfy-regular-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(assets/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header,
+footer {
+  background-color: #00000060;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 12px;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro {
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fefae0;
+  width: 40%;
+}
+
+.brand {
+  font-family: "satisfy-regular";
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.main-button {
+  color: #fefae0;
+  background-color: #cd212a;
+  border: none;
+  position: relative;
+  padding: 8px 16px;
+  height: 40px;
+}
+
+#order {
+  width: 280px;
+}
+
+#menu {
+  width: 200px;
+}
+
+.main-button:hover {
+  animation-name: button-hover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes button-hover {
+  100% {
+    font-size: 18px;
+  }
+}
+
+label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+nav {
+  padding: 16px 32px;
+}
+
+.nav-button {
+  color: #fefae0;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0px 16px;
+}
+
+.nav-button:hover {
+  animation-name: flag-underline;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.selected-nav {
+  box-shadow: 0 2px 0px 0 #008c45;
+}
+
+@keyframes flag-underline {
+  100% {
+    box-shadow: 0 2px 0px 0 #008c45, 0 4px 0px 0 #f4f9ff, 0 6px 0px 0 #cd212a;
+  }
+}
+
+label:hover,
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #fefae0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+a:link {
+  color: #cd212a;
+}
+
+a:visited {
+  color: #008c45;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
