@@ -60,7 +60,7 @@ h6 {
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url(assets/ivan-torres-MQUqbmszGGM-unsplash.jpg);
-  height: 720px;
+  min-height: 720px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,4 +194,36 @@ a:link {
 
 a:hover {
   text-decoration: underline;
+}
+
+.menu-div,
+.contact-div,
+.about-div {
+  padding-top: 20px;
+  background-color: #00000060;
+  margin-bottom: 20px;
+}
+
+.about-div {
+  padding: 40px;
+}
+
+.meal-category,
+.contact-category {
+  margin: 0px 16px 16px 16px;
+}
+
+.meal-category > h2 {
+  border-bottom: 1px solid #cd212a;
+  margin-bottom: 16px;
+}
+
+.meal {
+  margin-bottom: 16px;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
