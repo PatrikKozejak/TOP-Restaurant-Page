@@ -101,3 +101,5 @@ menuDiv.appendChild(appetizersDiv);
 menuDiv.appendChild(soupsDiv);
 menuDiv.appendChild(pizzaDiv);
 menuDiv.appendChild(pastaDiv);
+
+menuDiv.style.display = "none";

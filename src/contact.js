@@ -42,3 +42,5 @@ contactPersonDiv.appendChild(contactPersonPar);
 contactDiv.appendChild(addressDiv);
 contactDiv.appendChild(operatorDiv);
 contactDiv.appendChild(contactPersonDiv);
+
+contactDiv.style.display = "none";

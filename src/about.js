@@ -18,3 +18,5 @@ aboutDiv.appendChild(aboutUsHeadline);
 aboutDiv.appendChild(welcomeHeadline);
 aboutDiv.appendChild(aboutUsPar);
 aboutDiv.appendChild(img);
+
+aboutDiv.style.display = "none";
